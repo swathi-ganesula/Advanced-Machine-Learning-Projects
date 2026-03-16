@@ -1,43 +1,59 @@
-# Ensemble Learning for Cancer Prediction
+# BigMart Sales Prediction
 
 ## Project Overview
 
-This project implements **ensemble machine learning techniques** to predict cancer outcomes using a medical dataset.
-
-Two boosting approaches were implemented:
-
-* AdaBoost with Logistic Regression
-* AdaBoost with Support Vector Machine (SVM)
-
-Hyperparameter tuning was applied to improve model performance.
+This project predicts product sales for different BigMart stores using machine learning techniques.
+The goal is to analyze store and product features and build a predictive model to estimate sales.
 
 ---
 
-## Workflow
+## Dataset
 
-### Data Preprocessing
+The dataset contains information about products and stores, including:
+
+* Item weight
+* Item type
+* Item visibility
+* Item MRP
+* Outlet size
+* Outlet location type
+* Outlet type
+
+Target Variable:
+
+* Item outlet sales
+
+---
+
+## Data Preprocessing
+
+The following preprocessing steps were applied:
 
 * Handling missing values
-* Data cleaning
-* Feature separation
+* Encoding categorical variables
+* Feature engineering
+* Train-test split
 
-### Model Development
+---
 
-The following models were implemented:
+## Model Building
 
-1. AdaBoost with Logistic Regression
-2. AdaBoost with SVM
+Machine learning regression models were used to predict sales values.
 
-### Hyperparameter Tuning
+Examples include:
 
-Model parameters were optimized to improve predictive performance.
+* Linear Regression
+* Regularized regression models
+* Ensemble-based regression approaches
 
-### Model Evaluation
+---
 
-The models were evaluated using:
+## Model Evaluation
 
-* Accuracy Score
+Model performance was evaluated using:
+
 * Mean Squared Error (MSE)
+* R² Score
 
 ---
 
@@ -49,17 +65,6 @@ The models were evaluated using:
 * Matplotlib
 * Seaborn
 * Scikit-learn
-
----
-
-## Key Concepts
-
-* Ensemble Learning
-* AdaBoost
-* Logistic Regression
-* Support Vector Machines
-* Hyperparameter Tuning
-* Model Evaluation
 
 ---
 
